@@ -4,7 +4,7 @@ import numpy as np
 data = {}
 data['Name'] = ['A', 'B', 'C', 'D']
 data['Age'] = [10, 20, 30, 40]
-#print(data)
+print(data,"\n\n")
 
 df = pd.DataFrame(data)
 print(df)
@@ -87,6 +87,8 @@ print(studentdata)
 studentdata["percentage"] = (studentdata['Total']/(len(subjects)*100))*100
 print(studentdata)
 
+studentdata.to_csv('StudentData.csv', index=True)
+
 
 #print(studentdata.columns)
 
@@ -95,3 +97,9 @@ print(studentdata)
 #print(studentdata.index)
 
 #print(studentdata.index.values)
+
+
+
+df = pd.read_csv('StudentData.csv')
+
+
