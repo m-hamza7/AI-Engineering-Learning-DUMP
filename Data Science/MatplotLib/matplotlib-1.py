@@ -9,7 +9,7 @@ print(df,"\n\n")
 all_students = ['Ali','Sara','Ahmed','Usman','Ayesha','Bilal']
 Names=df["Name"]
 
-student = df.loc[3]
+student = df[df['Name']=='Ali']
 print(student,"\n\n")
 
 
